@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <rect width="200" height="240" fill="#0C0A07"/>
+  <path d="M40 50 L70 30 Q100 50 130 30 L160 50 L180 90 L155 100 L155 200 L45 200 L45 100 L20 90 Z" fill="#F4ECD8"/>
+  <text x="100" y="135" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="22" letter-spacing="2" fill="#B8412A">ROOTED</text>
+  <text x="100" y="160" text-anchor="middle" font-family="Georgia" font-style="italic" font-size="16" fill="#0C0A07">in purpose</text>
+</svg>

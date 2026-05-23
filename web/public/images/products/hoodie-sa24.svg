@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <rect width="200" height="240" fill="#1A1611"/>
+  <path d="M40 60 Q60 30 100 28 Q140 30 160 60 L185 90 L160 110 L160 215 L40 215 L40 110 L15 90 Z" fill="#0C0A07"/>
+  <path d="M70 30 Q100 60 130 30 Q130 60 100 70 Q70 60 70 30 Z" fill="#0C0A07"/>
+  <path d="M65 145 L135 145 L150 195 L50 195 Z" fill="none" stroke="#1A1611" stroke-width="2"/>
+  <text x="100" y="125" text-anchor="middle" font-family="Georgia" font-style="italic" font-size="18" fill="#D4A547">San Antonio</text>
+  <text x="100" y="142" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="14" fill="#F4ECD8" letter-spacing="3">SINCE &#39;24</text>
+</svg>

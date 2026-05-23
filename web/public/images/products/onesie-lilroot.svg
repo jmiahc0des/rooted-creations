@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <rect width="200" height="240" fill="#1A1611"/>
+  <path d="M50 60 L75 40 Q100 60 125 40 L150 60 L165 90 L145 100 L145 170 Q145 200 100 220 Q55 200 55 170 L55 100 L35 90 Z" fill="#F4ECD8"/>
+  <text x="100" y="135" text-anchor="middle" font-family="Arial Black" font-weight="900" font-size="16" fill="#D4A547" letter-spacing="2">LIL&#39; ROOT</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Georgia" font-style="italic" font-size="14" fill="#0C0A07">est. today</text>
+</svg>
