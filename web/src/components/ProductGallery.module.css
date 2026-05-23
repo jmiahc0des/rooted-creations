@@ -1,0 +1,7 @@
+.gallery { display: flex; flex-direction: column; gap: 12px; }
+.main { position: relative; aspect-ratio: 4/5; background: var(--ink-soft); border: 1px solid var(--hairline); overflow: hidden; }
+.main :global(img) { object-fit: cover; }
+.thumbs { display: flex; gap: 10px; }
+.thumb { position: relative; width: 88px; height: 110px; border: 1px solid var(--hairline); background: var(--ink-soft); padding: 0; cursor: pointer; transition: border-color 0.3s ease; }
+.thumb :global(img) { object-fit: cover; }
+.thumbActive { border-color: var(--gold); }

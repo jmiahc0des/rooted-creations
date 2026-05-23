@@ -1,0 +1,26 @@
+.inquire { display: flex; flex-direction: column; gap: 24px; }
+.group { display: flex; flex-direction: column; gap: 10px; }
+.label { color: var(--gold-soft); }
+.options { display: flex; flex-wrap: wrap; gap: 8px; }
+.opt {
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 9px 14px; min-width: 48px;
+  border: 1px solid var(--hairline-strong);
+  background: transparent; color: var(--cream);
+  transition: all 0.2s ease; cursor: pointer;
+}
+.opt:hover { border-color: var(--cream); }
+.optActive { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  background: var(--gold); color: var(--ink);
+  padding: 18px 28px;
+  font-family: var(--font-mono); font-size: 12px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+.btn:hover { background: var(--cream); gap: 18px; }
+.note { font-family: var(--font-serif); font-style: italic; color: var(--cream-dim); font-size: 14px; }

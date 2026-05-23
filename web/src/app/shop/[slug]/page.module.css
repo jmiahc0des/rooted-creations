@@ -1,0 +1,41 @@
+.pdp { padding: 56px 32px 96px; max-width: 1280px; margin: 0 auto; }
+.crumb { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 32px; }
+.crumb a { color: var(--gold); }
+.crumb a:hover { text-decoration: underline; }
+
+.layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: start; }
+
+.info { display: flex; flex-direction: column; gap: 20px; }
+.tags { display: flex; gap: 8px; }
+.tagPill {
+  font-family: var(--font-mono); font-size: 9.5px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 4px 10px; border: 1px solid var(--gold);
+  color: var(--gold);
+}
+.name { font-family: var(--font-display); font-weight: 900; font-size: clamp(40px, 5.5vw, 72px); line-height: 0.9; text-transform: uppercase; letter-spacing: -0.015em; }
+.edition { color: var(--gold-soft); font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; }
+.price { font-family: var(--font-display); font-weight: 700; font-size: 28px; color: var(--gold); }
+.tagline { font-family: var(--font-serif); font-style: italic; font-size: 18px; color: var(--cream-dim); }
+.description { font-family: var(--font-serif); font-size: 17px; line-height: 1.55; color: var(--cream); }
+
+.rule { height: 1px; background: var(--hairline); margin: 8px 0; }
+
+.madeFor { padding: 64px 0; border-top: 1px solid var(--hairline); margin-top: 80px; }
+.madeForTitle { font-family: var(--font-display); font-weight: 900; font-size: clamp(32px, 4vw, 48px); text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 16px; }
+.madeForTitle em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.madeForBody { font-family: var(--font-serif); font-size: 18px; color: var(--cream-dim); max-width: 640px; line-height: 1.55; margin-bottom: 24px; }
+.madeForLink { display: inline-flex; align-items: center; gap: 10px; color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 4px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; transition: gap 0.3s ease; }
+.madeForLink:hover { gap: 16px; }
+
+.related { padding-top: 64px; border-top: 1px solid var(--hairline); }
+.relatedGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+@media (max-width: 1024px) {
+  .layout { grid-template-columns: 1fr; }
+  .relatedGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .pdp { padding: 32px 20px 64px; }
+  .relatedGrid { grid-template-columns: 1fr; }
+}
