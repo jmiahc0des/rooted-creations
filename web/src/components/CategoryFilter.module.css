@@ -1,0 +1,12 @@
+.filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+.chip {
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 9px 16px; border-radius: 100px;
+  border: 1px solid var(--hairline-strong);
+  color: var(--cream-dim);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.chip:hover { color: var(--cream); border-color: var(--cream); }
+.chip.active { background: var(--gold); color: var(--ink); border-color: var(--gold); }
