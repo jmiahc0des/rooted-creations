@@ -1,0 +1,33 @@
+:root {
+  /* ───── PALETTE ───── */
+  --ink: #0C0A07;
+  --ink-soft: #1A1611;
+  --cream: #F4ECD8;
+  --cream-dim: rgba(244, 236, 216, 0.7);
+  --gold: #D4A547;
+  --gold-soft: #C9A876;
+  --brick: #B8412A;
+
+  --hairline: rgba(244, 236, 216, 0.18);
+  --hairline-strong: rgba(244, 236, 216, 0.35);
+
+  /* ───── TYPE ───── */
+  --font-display: var(--font-big-shoulders), 'Arial Black', sans-serif;
+  --font-serif: var(--font-instrument), Georgia, serif;
+  --font-mono: var(--font-jetbrains), 'Courier New', monospace;
+
+  /* ───── SPACING (8pt grid) ───── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ───── BREAKPOINTS (used in media queries) ───── */
+  /* sm: 640px · md: 768px · lg: 1024px · xl: 1280px */
+}
