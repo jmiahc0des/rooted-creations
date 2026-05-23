@@ -1,0 +1,104 @@
+================================================================================
+[UTILITY BAR - Dark Theme Block: Background: --ink | Color: --cream]
+================================================================================
+(Left) EST. 2024...     (Center Infinite Marquee Loop)      (Right) @ROOTEDCREATIONS...
+                        ✺ Free local pickup ✺ New drops...
+--------------------------------------------------------------------------------
+[NAVBAR - Sticky Grid Layout (3 Columns: 1fr | auto | 1fr)]
+--------------------------------------------------------------------------------
+[Shop] [Custom Work] [Story]  |   [ROOTED CREATIONS CO.]   |  [Contact] [Search] [Cart (0)]
+                              |  SA · TX · MADE WITH PURPOSE|
+--------------------------------------------------------------------------------
+[01. HERO SECTION - Full Height Flex Container]
+--------------------------------------------------------------------------------
+(Top Grid: 2 Columns)
+Vol. 01 — Spring... (Left)                                  Custom apparel... (Right)
+
+                                  (Floating Abs Window: Rotating Seal SVG SVG)
+                                       / ROOTED CREATIONS CO. \
+                                      |           * |
+                                       \      EST. 2024       /
+
+(Middle Giant Typography Block)
+ALL DESIGNS.
+ALL Rooted. (Accent Color: --clay | Italic Serif)
+
+(Bottom Grid: Auto Columns)
+[Now Available / Spring '26 Drop]                            [Scroll collection ↓]
+--------------------------------------------------------------------------------
+[MARQUEE STRIP - Text Track Scrolling Effect]
+--------------------------------------------------------------------------------
+Custom Tees ✺ ORIGINAL DESIGNS ✺ Hoodies & Crewnecks ✺ LOCAL BRANDING...
+--------------------------------------------------------------------------------
+[02. SHOP PRODUCTS SECTION - Section Layout Head + Grid]
+--------------------------------------------------------------------------------
+(Section Header Grid: Auto | 1fr | Auto)
+01 / The Shop       | CURRENTLY ROOTED         | Original prints... [Shop all goods →]
+--------------------------------------------------------------------------------
+(Product Grid: 4-Column Responsive Layout)
+[ TILE 1 (Dark Grey)   ]  [ TILE 2 (Beige)       ]  [ TILE 3 (Clay/Orange) ]  [ TILE 4 (Sage Green)    ]
+[ Tag: New | Idx: 01   ]  [ Tag: Bestseller | 02 ]  [ Tag: Limited | 03     ]  [ Tag: Youth | Idx: 04   ]
+[ SVG: Rooted Tee      ]  [ SVG: SA '24 Hoodie   ]  [ SVG: Leave Mark Tee   ]  [ SVG: Lil' Root Onesie ]
+[ Quick Add Hover UI   ]  [ Quick Add Hover UI   ]  [ Quick Add Hover UI    ]  [ Quick Add Hover UI    ]
+Name / Price              Name / Price              Name / Price               Name / Price
+Desc Block                Desc Block                Desc Block                 Desc Block
+--------------------------------------------------------------------------------
+[03. CATEGORIES SECTION - Clean Cream Backdrop Block]
+--------------------------------------------------------------------------------
+(Section Header Grid)
+02 / Categories     | FIVE WAYS TO WEAR IT     | A growing catalog...
+--------------------------------------------------------------------------------
+(Category Grid: 5-Column Inline Split Layout)
+[Cat 1: T-Shirts]   [Cat 2: Hoodies]   [Cat 3: Youth]     [Cat 4: Access.]   [Cat 5: Dark Theme]
+- Num: 01           - Num: 02          - Num: 03          - Num: 04          - Num: 05
+- SVG Outline Icon  - SVG Hood Icon    - SVG Onesie Icon  - SVG Tote Icon    - SVG Pencil Icon
+- "24 styles →"     - "12 styles →"    - "9 styles →"     - "16 styles →"    - "By Appt →"
+--------------------------------------------------------------------------------
+[04. CUSTOM WORK B2B SECTION - Dark Split Grid Layout (2 Equal Columns)]
+--------------------------------------------------------------------------------
+(Column 1: Overlapping Visual Stack)       | (Column 2: Sales/Copy Engine)
+[ Block 1: Accent Color Fill Layer     ]   | 03 / Custom Work
+[ Block 2: Brand/Logo Silhouette SVG    ]   | BRING US YOUR IDEA.
+[ Block 3: Accent Background Box Blend ]   | We design and print custom apparel...
+                                           | [Tags: Local Biz / Teams / Reunions / Events]
+(Floating Badge: "Free Quote ★")            | 
+                                           | [[ START A PROJECT → ]] (Primary Call to Action Button)
+--------------------------------------------------------------------------------
+[05. PRODUCTION PROCESS STRIP - Warm Tan Backdrop Block]
+--------------------------------------------------------------------------------
+From sketch to stitch. (Left Title)        | A simple three-step process... (Right Text Alignment)
+--------------------------------------------------------------------------------
+(Process Grid: 3 Columns With Divider Borders)
+[ STEP 01 ]                                [ STEP 02 ]                                [ STEP 03 ]
+- Num: 01 (Bold Hero Size)                 - Num: 02 (Bold Hero Size)                 - Num: 03 (Bold Hero Size)
+- Title: Design                            - Title: Print                             - Title: Deliver
+- Copy: Tell us what you need...           - Copy: Once approved, we print...         - Copy: Local pickup or shipped...
+--------------------------------------------------------------------------------
+[06. THE STUDIO STORY - Asymmetric Split Grid Layout (1fr | 1.4fr)]
+--------------------------------------------------------------------------------
+(Column 1: Metadata Column)                 | (Column 2: Editorial Column)
+- Star Motif Icon Graphic                  | ROOTED HERE. WORN ANYWHERE.
+- 04 / The Story                           | 
+- Coords Block: San Antonio, TX            | [R]ooted Creations Co. is a one-person studio...
+  29.4241° N / 98.4936° W                  | We work with neighbors, friends, and small biz...
+--------------------------------------------------------------------------------
+[07. NEWSLETTER CTA STRIP - Inverted Accent Block: Background: --clay]
+--------------------------------------------------------------------------------
+(CTA Layout: 2 Columns Grid)
+STAY ROOTED. (Left Title Block)            | First dibs on new drops... (Right Input Stack)
+                                           | [ Email Address Field ] [[ SUBSCRIBE ]] (Dark Button)
+                                           | Disclaimer subtext block
+--------------------------------------------------------------------------------
+[08. MASTER FOOTER - Quad-Column Layout Grid (1.5fr | 1fr | 1fr | 1fr)]
+--------------------------------------------------------------------------------
+[Brand Block]         [Shop Links]         [Custom Links]       [Info Links]
+Rooted Creations Co.  - New Arrivals       - Local Business     - Our Story
+Custom apparel...     - T-Shirts           - Teams & Staff      - Sizing
+hello@rooted...       - Hoodies            - Events             - Shipping & Returns
+@rootedcreations...   - Youth / Access.    - Get a Quote        - Contact
+
+(Massive Layout-Wide Text Element: Outline-stroke Treatment)
+                     ROOTED IN PURPOSE
+                     
+(Footer Bottom Bar Flex-Row)
+© 2026 Rooted Creations Co.                                     Made in San Antonio, TX
