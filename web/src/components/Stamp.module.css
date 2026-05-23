@@ -1,0 +1,12 @@
+.stamp {
+  display: inline-block;
+  border: 1.2px solid var(--brick);
+  color: var(--brick);
+  padding: 5px 10px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: var(--ink);
+  white-space: nowrap;
+}

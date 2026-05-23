@@ -1,0 +1,29 @@
+.strip {
+  overflow: hidden;
+  padding: 14px 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.gold { background: var(--gold); color: var(--ink); }
+.ink { background: var(--ink); color: var(--cream); }
+
+.track {
+  display: inline-flex;
+  align-items: center;
+  gap: 36px;
+  white-space: nowrap;
+  animation: scroll linear infinite;
+  padding-left: 36px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.item { display: inline-flex; align-items: center; gap: 36px; }
+.star { color: var(--brick); }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

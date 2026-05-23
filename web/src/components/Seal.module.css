@@ -1,0 +1,6 @@
+.seal {
+  animation: spin 38s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
