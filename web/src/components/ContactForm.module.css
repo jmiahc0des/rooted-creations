@@ -1,0 +1,27 @@
+.form { display: flex; flex-direction: column; gap: 20px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.label { color: var(--gold-soft); }
+.field input, .field textarea {
+  background: var(--ink-soft); border: 1px solid var(--hairline-strong);
+  color: var(--cream); padding: 14px 16px;
+  font-family: var(--font-serif); font-size: 17px;
+  outline: none; transition: border-color 0.3s ease;
+}
+.field input:focus, .field textarea:focus { border-color: var(--gold); }
+.field textarea { resize: vertical; min-height: 140px; }
+.submit {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: 14px;
+  background: var(--gold); color: var(--ink);
+  padding: 16px 24px;
+  font-family: var(--font-mono); font-size: 12px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  transition: all 0.3s ease; cursor: pointer;
+}
+.submit:hover { background: var(--cream); gap: 20px; }
+.submit:disabled { opacity: 0.7; cursor: default; }
+.error { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brick); }
+
+.success { padding: 48px 0; text-align: center; }
+.mark { width: 56px; height: 56px; margin: 0 auto 16px; border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 24px; }
+.success h3 { font-family: var(--font-display); font-weight: 900; font-size: 36px; text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 8px; }
+.success p { font-family: var(--font-serif); font-style: italic; color: var(--cream-dim); }
