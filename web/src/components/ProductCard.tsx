@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Product } from '@/data/products';
+import { asset } from '@/lib/asset';
 import styles from './ProductCard.module.css';
 
 type Props = {
@@ -19,7 +20,7 @@ export function ProductCard({ product, index, total }: Props) {
         {tag && <span className={`mono ${styles.tag}`}>{tag}</span>}
         <span className={`mono ${styles.idx}`}>{idx}</span>
         <Image
-          src={product.images[0]}
+          src={asset(product.images[0])}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

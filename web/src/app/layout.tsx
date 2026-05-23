@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import { bigShoulders, instrumentSerif, jetbrains } from './fonts';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
+import { asset } from '@/lib/asset';
 
 export const metadata: Metadata = {
   title: 'Rooted Creations Co. · Custom Apparel + Graphic Design / San Antonio, TX',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${bigShoulders.variable} ${instrumentSerif.variable} ${jetbrains.variable}`}>
       <body>
+        <div className="grain" aria-hidden style={{ backgroundImage: `url(${asset('/grain.svg')})` }} />
         <Nav />
         {children}
         <Footer />

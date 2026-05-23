@@ -14,16 +14,15 @@ body {
   min-height: 100vh;
 }
 
-/* Paper grain texture overlay, fixed, low opacity */
-body::before {
-  content: '';
+/* Paper grain texture overlay rendered via <Grain /> in layout */
+.grain {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 200;
   opacity: 0.05;
-  background-image: url('/grain.svg');
   mix-blend-mode: screen;
+  background-repeat: repeat;
 }
 
 ::selection { background: var(--gold); color: var(--ink); }

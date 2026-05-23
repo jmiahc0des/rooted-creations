@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { asset } from '@/lib/asset';
 import styles from './ProductGallery.module.css';
 
 export function ProductGallery({ images, alt }: { images: string[]; alt: string }) {
@@ -11,7 +12,7 @@ export function ProductGallery({ images, alt }: { images: string[]; alt: string 
   return (
     <div className={styles.gallery}>
       <div className={styles.main}>
-        <Image src={main} alt={alt} fill sizes="(max-width: 1024px) 100vw, 50vw" priority />
+        <Image src={asset(main)} alt={alt} fill sizes="(max-width: 1024px) 100vw, 50vw" priority />
       </div>
       {images.length > 1 && (
         <div className={styles.thumbs}>
@@ -23,7 +24,7 @@ export function ProductGallery({ images, alt }: { images: string[]; alt: string 
               onClick={() => setActive(i)}
               aria-label={`View image ${i + 1} of ${images.length}`}
             >
-              <Image src={src} alt="" fill sizes="120px" />
+              <Image src={asset(src)} alt="" fill sizes="120px" />
             </button>
           ))}
         </div>
