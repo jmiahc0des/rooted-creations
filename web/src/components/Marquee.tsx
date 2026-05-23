@@ -13,7 +13,7 @@ export function Marquee({ items, variant = 'gold', speed = 32 }: Props) {
     <div className={`${styles.strip} ${cls}`}>
       <div className={styles.track} style={{ animationDuration: `${speed}s` }}>
         {doubled.map((item, i) => (
-          <span key={i} className={styles.item}>
+          <span key={`${item}-${i}`} className={styles.item}>
             {item} <span className={styles.star}>★</span>
           </span>
         ))}

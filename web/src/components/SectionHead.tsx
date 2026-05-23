@@ -17,7 +17,7 @@ export function SectionHead({ idx, title, aside, link }: Props) {
         {aside && <p>{aside}</p>}
         {link && (
           <Link href={link.href} className={styles.link}>
-            {link.label} <span aria-hidden>→</span>
+            {link.label} <span aria-hidden="true">→</span>
           </Link>
         )}
       </div>
