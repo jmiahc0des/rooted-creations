@@ -1,0 +1,43 @@
+.footer { background: var(--ink); color: var(--cream); padding: 80px 32px 24px; border-top: 1px solid var(--hairline); }
+.top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 60px; padding-bottom: 56px; border-bottom: 1px solid var(--hairline); }
+.brand { }
+.mark {
+  font-family: var(--font-display); font-weight: 900; font-size: 36px;
+  line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; margin-bottom: 8px;
+}
+.italic { font-family: var(--font-serif); font-style: italic; font-weight: 400; text-transform: none; color: var(--gold); }
+.tag { font-family: var(--font-serif); font-style: italic; color: var(--cream-dim); font-size: 16px; max-width: 320px; margin-bottom: 24px; }
+.contact { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; line-height: 2; }
+.contact a:hover { color: var(--gold); }
+.col h5 {
+  font-family: var(--font-mono); font-size: 10.5px;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 20px;
+}
+.col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.col li a {
+  font-family: var(--font-display); font-weight: 700; font-size: 18px;
+  text-transform: uppercase; letter-spacing: 0.02em;
+  transition: color 0.3s ease, padding-left 0.3s ease; display: inline-block;
+}
+.col li a:hover { color: var(--gold); padding-left: 8px; }
+
+.massive {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(72px, 16vw, 240px); line-height: 0.85;
+  letter-spacing: -0.03em; text-transform: uppercase; text-align: center;
+  color: transparent; -webkit-text-stroke: 1.5px var(--hairline-strong);
+  padding: 48px 0 0; overflow: hidden; user-select: none;
+}
+.massive .italic { -webkit-text-stroke: 0; color: var(--gold); }
+
+.bottom { display: flex; justify-content: space-between; padding-top: 24px; color: var(--cream-dim); font-size: 10.5px; }
+
+@media (max-width: 768px) {
+  .top { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer { padding: 56px 20px 20px; }
+  .bottom { flex-direction: column; gap: 8px; text-align: center; }
+}
+@media (max-width: 480px) {
+  .top { grid-template-columns: 1fr; }
+}
