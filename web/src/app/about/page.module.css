@@ -1,0 +1,25 @@
+.about { padding: 80px 32px 120px; max-width: 1280px; margin: 0 auto; }
+
+.grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start; padding-top: 40px; }
+
+.meta { position: sticky; top: 140px; display: flex; flex-direction: column; gap: 28px; }
+.star { width: 56px; height: 56px; }
+.idx { color: var(--gold); }
+.coords { font-family: var(--font-mono); font-size: 11px; color: var(--cream-dim); letter-spacing: 0.14em; line-height: 1.8; }
+.coords strong { color: var(--cream); font-weight: 500; }
+
+.body { }
+.pull { font-family: var(--font-display); font-weight: 900; font-size: clamp(56px, 9vw, 124px); line-height: 0.85; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 40px; }
+.pull em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.paragraph { font-family: var(--font-serif); font-size: 21px; line-height: 1.55; color: var(--cream); margin-bottom: 24px; max-width: 660px; }
+.paragraph.muted { color: var(--cream-dim); }
+.paragraph:first-of-type::first-letter {
+  font-family: var(--font-display); font-weight: 900; font-size: 80px; line-height: 0.8;
+  float: left; padding: 6px 12px 0 0; color: var(--gold);
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; gap: 32px; }
+  .meta { position: static; flex-direction: row; flex-wrap: wrap; }
+}
+@media (max-width: 640px) { .about { padding: 40px 20px 80px; } }
