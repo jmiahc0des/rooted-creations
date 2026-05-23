@@ -3,3 +3,4 @@
 web/.env.local
 web/node_modules/
 web/.next/
+web/test-results/
