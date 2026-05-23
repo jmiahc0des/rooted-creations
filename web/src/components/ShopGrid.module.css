@@ -1,0 +1,7 @@
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px 24px; }
+.empty { padding: 64px 0; text-align: center; color: var(--cream-dim); font-family: var(--font-serif); font-style: italic; font-size: 19px; }
+.emptyLink { color: var(--gold); text-decoration: underline; }
+
+@media (max-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }

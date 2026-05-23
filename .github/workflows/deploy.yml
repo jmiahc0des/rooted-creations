@@ -1,0 +1,74 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./web
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Derive base path
+        id: basepath
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY##*/}"
+          if [ -f "${GITHUB_WORKSPACE}/CNAME" ] || [ -f "${GITHUB_WORKSPACE}/web/public/CNAME" ]; then
+            echo "Using custom domain - no base path"
+            echo "base_path=" >> "$GITHUB_OUTPUT"
+          else
+            echo "Using github.io subpath: /$REPO_NAME"
+            echo "base_path=/$REPO_NAME" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.basepath.outputs.base_path }}
+          NEXT_PUBLIC_FORMSPREE_CUSTOM_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORMSPREE_CUSTOM_ENDPOINT }}
+          NEXT_PUBLIC_FORMSPREE_CONTACT_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORMSPREE_CONTACT_ENDPOINT }}
+          NEXT_PUBLIC_FORMSPREE_NEWSLETTER_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORMSPREE_NEWSLETTER_ENDPOINT }}
+        run: npm run build
+
+      - name: Disable Jekyll
+        run: touch ./out/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./web/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

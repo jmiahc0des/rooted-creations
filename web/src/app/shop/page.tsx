@@ -1,17 +1,10 @@
 import { Suspense } from 'react';
 import { SectionHead } from '@/components/SectionHead';
-import { ProductCard } from '@/components/ProductCard';
 import { CategoryFilter } from '@/components/CategoryFilter';
-import { products, type ProductCategory } from '@/data/products';
+import { ShopGrid } from '@/components/ShopGrid';
 import styles from './page.module.css';
 
-const validCats: ProductCategory[] = ['tees', 'hoodies', 'youth', 'accessories'];
-
-export default async function Shop({ searchParams }: { searchParams: Promise<{ cat?: string }> }) {
-  const { cat } = await searchParams;
-  const category = (validCats as string[]).includes(cat ?? '') ? (cat as ProductCategory) : null;
-  const filtered = category ? products.filter((p) => p.category === category) : products;
-
+export default function Shop() {
   return (
     <main className={styles.shop}>
       <SectionHead
@@ -21,16 +14,8 @@ export default async function Shop({ searchParams }: { searchParams: Promise<{ c
       />
       <Suspense fallback={null}>
         <CategoryFilter />
+        <ShopGrid />
       </Suspense>
-      {filtered.length === 0 ? (
-        <p className={styles.empty}>Nothing in this category yet. Check back soon, or <a href="/custom" style={{ color: 'var(--gold)', textDecoration: 'underline' }}>request a custom piece</a>.</p>
-      ) : (
-        <div className={styles.grid}>
-          {filtered.map((p, i) => (
-            <ProductCard key={p.slug} product={p} index={i} total={filtered.length} />
-          ))}
-        </div>
-      )}
     </main>
   );
 }
