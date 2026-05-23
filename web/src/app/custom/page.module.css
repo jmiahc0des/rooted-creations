@@ -1,0 +1,23 @@
+.custom { padding: 64px 32px 96px; }
+.intro { max-width: 900px; margin: 0 auto 80px; text-align: center; }
+.eyebrow { color: var(--gold); margin-bottom: 24px; display: inline-block; }
+.headline { font-family: var(--font-display); font-weight: 900; font-size: clamp(56px, 9vw, 120px); line-height: 0.85; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 32px; }
+.headline em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.lead { font-family: var(--font-serif); font-size: 21px; color: var(--cream-dim); max-width: 640px; margin: 0 auto; line-height: 1.5; }
+
+.examples { padding: 64px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); margin-bottom: 80px; }
+.examplesHead { font-family: var(--font-display); font-weight: 900; font-size: 32px; text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 32px; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card { background: var(--ink-soft); padding: 24px; border: 1px solid var(--hairline); display: flex; flex-direction: column; gap: 16px; aspect-ratio: 4/5; }
+.cardLabel { color: var(--gold-soft); }
+.cardTitle { font-family: var(--font-display); font-weight: 900; font-size: 22px; line-height: 1; text-transform: uppercase; letter-spacing: 0.01em; margin-top: auto; }
+.cardMeta { font-family: var(--font-serif); font-style: italic; color: var(--cream-dim); font-size: 14px; }
+
+.formSection { max-width: 760px; margin: 0 auto; padding: 80px 0 0; border-top: 1px solid var(--hairline); }
+.formHead { text-align: center; margin-bottom: 48px; }
+.formTitle { font-family: var(--font-display); font-weight: 900; font-size: clamp(40px, 5.5vw, 72px); line-height: 0.9; text-transform: uppercase; letter-spacing: -0.015em; }
+.formTitle em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.formIntro { font-family: var(--font-serif); font-size: 18px; color: var(--cream-dim); margin-top: 16px; }
+
+@media (max-width: 1024px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .cards { grid-template-columns: 1fr; } .custom { padding: 40px 20px 64px; } }

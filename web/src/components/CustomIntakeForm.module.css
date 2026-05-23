@@ -1,0 +1,50 @@
+.form { display: flex; flex-direction: column; gap: 24px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.field { display: flex; flex-direction: column; gap: 8px; }
+.label { color: var(--gold-soft); }
+
+.field input, .field textarea {
+  background: var(--ink-soft);
+  border: 1px solid var(--hairline-strong);
+  color: var(--cream);
+  padding: 14px 16px;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.field input:focus, .field textarea:focus { border-color: var(--gold); }
+.field textarea { resize: vertical; min-height: 140px; }
+
+.fieldset { border: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.radios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.radio { display: flex; align-items: center; gap: 10px; padding: 14px 16px; border: 1px solid var(--hairline-strong); cursor: pointer; transition: all 0.2s ease; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dim); }
+.radio:hover { color: var(--cream); border-color: var(--cream); }
+.radio input { accent-color: var(--gold); }
+.radio:has(input:checked) { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+
+.submit {
+  align-self: flex-start;
+  display: inline-flex; align-items: center; gap: 14px;
+  background: var(--gold); color: var(--ink);
+  padding: 18px 28px;
+  font-family: var(--font-mono); font-size: 12px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  transition: all 0.3s ease; cursor: pointer; margin-top: 12px;
+}
+.submit:hover { background: var(--cream); gap: 22px; }
+.submit:disabled { opacity: 0.7; cursor: default; }
+
+.error { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brick); }
+
+.success { padding: 64px 0; text-align: center; }
+.successMark { width: 60px; height: 60px; margin: 0 auto 20px; border: 2px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 28px; }
+.successTitle { font-family: var(--font-display); font-weight: 900; font-size: 42px; text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 12px; }
+.successBody { font-family: var(--font-serif); font-size: 17px; color: var(--cream-dim); max-width: 480px; margin: 0 auto; line-height: 1.5; }
+.successBody a { color: var(--gold); }
+.successBody a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .row { grid-template-columns: 1fr; }
+  .radios { grid-template-columns: 1fr 1fr; }
+}
