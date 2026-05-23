@@ -23,7 +23,7 @@ export default async function Shop({ searchParams }: { searchParams: Promise<{ c
         <CategoryFilter />
       </Suspense>
       {filtered.length === 0 ? (
-        <p className={styles.empty}>Nothing in this category yet — check back soon, or <a href="/custom" style={{ color: 'var(--gold)', textDecoration: 'underline' }}>request a custom piece</a>.</p>
+        <p className={styles.empty}>Nothing in this category yet. Check back soon, or <a href="/custom" style={{ color: 'var(--gold)', textDecoration: 'underline' }}>request a custom piece</a>.</p>
       ) : (
         <div className={styles.grid}>
           {filtered.map((p, i) => (

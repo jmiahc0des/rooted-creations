@@ -24,7 +24,7 @@ export default function Contact() {
             <span className={styles.blockValue}>
               <a href="https://instagram.com/rootedcreationscotx" target="_blank" rel="noreferrer">@rootedcreationscotx</a>
             </span>
-            <span className={styles.blockSub}>DM us — we&rsquo;re usually quickest here.</span>
+            <span className={styles.blockSub}>DM us. We&rsquo;re usually quickest here.</span>
           </div>
 
           <div className={styles.block}>

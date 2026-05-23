@@ -23,7 +23,7 @@ export const products: Product[] = [
     category: 'tees',
     price: 32,
     tagline: 'Heavyweight 100% cotton',
-    description: 'Our signature tee — heavyweight cotton, made to soften with every wash. The mark you put on means something.',
+    description: 'Our signature tee. Heavyweight cotton, made to soften with every wash. The mark you put on means something.',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Ink', 'Bone'],
     edition: 'N° 01 / 12',

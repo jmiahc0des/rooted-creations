@@ -12,7 +12,7 @@ export function ProductInquire({ product }: { product: Product }) {
     const subject = encodeURIComponent(`Order: ${product.name} (${size}, ${color})`);
     const body = encodeURIComponent(
       `Hi Rooted Creations Co.,\n\nI'd like to order:\n` +
-      `• ${product.name} — $${product.price}\n` +
+      `• ${product.name}: $${product.price}\n` +
       `• Size: ${size}\n` +
       `• Color: ${color}\n\n` +
       `Let me know payment + pickup/shipping details when you get a chance. Thanks!\n`

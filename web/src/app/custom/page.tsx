@@ -12,12 +12,12 @@ export default function CustomWork() {
   return (
     <main className={styles.custom}>
       <div className={styles.intro}>
-        <span className={`mono ${styles.eyebrow}`}>— 03 / Custom Work</span>
+        <span className={`mono ${styles.eyebrow}`}>03 / Custom Work</span>
         <h1 className={styles.headline}>
           Bring us <em>your idea.</em>
         </h1>
         <p className={styles.lead}>
-          Custom apparel made for local businesses, families, teams, and one-off projects worth making real. Tell us what you&rsquo;re picturing — we&rsquo;ll handle the design, printing, and delivery.
+          Custom apparel made for local businesses, families, teams, and one-off projects worth making real. Tell us what you&rsquo;re picturing. We&rsquo;ll handle the design, printing, and delivery.
         </p>
       </div>
 

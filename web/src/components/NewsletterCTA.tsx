@@ -29,7 +29,7 @@ export function NewsletterCTA() {
           Stay <em className={styles.italic}>rooted.</em>
         </h3>
         <div>
-          <p className={styles.lead}>First dibs on new drops, custom slots, and shop news. No spam — just the good stuff, a few times a season.</p>
+          <p className={styles.lead}>First dibs on new drops, custom slots, and shop news. No spam. Just the good stuff, a few times a season.</p>
           <form className={styles.form} onSubmit={handleSubmit}>
             <input
               type="email"
@@ -43,7 +43,7 @@ export function NewsletterCTA() {
               {status === 'success' ? 'Subscribed ✓' : status === 'loading' ? 'Subscribing…' : 'Subscribe'}
             </button>
           </form>
-          {status === 'error' && <p className={styles.error}>Something went wrong — try again or DM us.</p>}
+          {status === 'error' && <p className={styles.error}>Something went wrong. Try again or DM us.</p>}
           <p className={`mono ${styles.disclaimer}`}>By subscribing you agree to occasional emails from Rooted Creations Co.</p>
         </div>
       </div>

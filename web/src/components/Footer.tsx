@@ -9,7 +9,7 @@ export function Footer() {
           <div className={styles.mark}>
             Rooted<br />Creations <span className={styles.italic}>Co.</span>
           </div>
-          <p className={styles.tag}>Custom apparel &amp; graphic design — handprinted in San Antonio, Texas.</p>
+          <p className={styles.tag}>Custom apparel &amp; graphic design. Handprinted in San Antonio, Texas.</p>
           <div className={styles.contact}>
             <div><a href="mailto:hello@rootedcreations.co">hello@rootedcreations.co</a></div>
             <div><a href="https://instagram.com/rootedcreationscotx" target="_blank" rel="noreferrer">@rootedcreationscotx</a></div>

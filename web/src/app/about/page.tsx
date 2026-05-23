@@ -32,7 +32,7 @@ export default function About() {
             Rooted Creations Co. is a one-person studio born out of a love for great type, local pride, and the feeling of putting on a shirt that actually means something. We design and print custom apparel for the people, families, and small businesses we share a city with.
           </p>
           <p className={`${styles.paragraph} ${styles.muted}`}>
-            We work with neighbors and small businesses across San Antonio — and ship to people across Texas who carry a piece of SA wherever they go. Every order is made by hand: designed for the customer, printed in small batches, and quality-checked piece by piece.
+            We work with neighbors and small businesses across San Antonio, and ship to people across Texas who carry a piece of SA wherever they go. Every order is made by hand: designed for the customer, printed in small batches, and quality-checked piece by piece.
           </p>
           <p className={`${styles.paragraph} ${styles.muted}`}>
             If you&rsquo;ve got something to say, we&rsquo;ll help you put it on a shirt. <em style={{ color: 'var(--gold)' }}>Made with purpose. Built to leave a mark.</em>

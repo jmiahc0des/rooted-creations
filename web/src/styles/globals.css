@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-/* Paper grain texture overlay — fixed, low opacity */
+/* Paper grain texture overlay, fixed, low opacity */
 body::before {
   content: '';
   position: fixed;

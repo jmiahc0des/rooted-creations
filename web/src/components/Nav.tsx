@@ -37,7 +37,7 @@ export function Nav() {
           <Link href="/contact" className={`${styles.link} ${styles.linkRight}`}>Contact</Link>
           <button
             className={styles.cart}
-            title="Cart coming soon — inquire to order"
+            title="Cart coming soon. Inquire to order"
             type="button"
             aria-label="Cart (coming soon)"
           >

@@ -5,7 +5,7 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Rooted Creations Co. — Custom Apparel + Graphic Design / San Antonio, TX',
+  title: 'Rooted Creations Co. · Custom Apparel + Graphic Design / San Antonio, TX',
   description: 'Custom apparel and graphic design, handprinted in San Antonio. Designs made for people, families, and small businesses with something to say.',
 };
 

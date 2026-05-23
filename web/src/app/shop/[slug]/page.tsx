@@ -49,7 +49,7 @@ export default async function ProductDetail({ params }: { params: Promise<{ slug
       <section className={styles.madeFor}>
         <h2 className={styles.madeForTitle}>Want this <em>customized?</em></h2>
         <p className={styles.madeForBody}>
-          Every piece in the shop can be reworked with your name, your business, your event, or a custom design. Tell us what you&rsquo;re picturing — we&rsquo;ll build it.
+          Every piece in the shop can be reworked with your name, your business, your event, or a custom design. Tell us what you&rsquo;re picturing. We&rsquo;ll build it.
         </p>
         <Link href="/custom" className={styles.madeForLink}>Start a custom request <span>→</span></Link>
       </section>

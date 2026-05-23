@@ -65,7 +65,7 @@ export default function Home() {
             <div className={styles.stamp}>Free<br />Quote<br />★</div>
           </div>
           <div>
-            <span className={`mono`} style={{ color: 'var(--gold)' }}>— 03 / Custom Work</span>
+            <span className={`mono`} style={{ color: 'var(--gold)' }}>03 / Custom Work</span>
             <h3 className={styles.customHead}>Bring us <em>your idea.</em></h3>
             <p className={styles.customLead}>
               We design and print custom apparel for small businesses, churches, schools, family reunions, birthdays, weddings, and one-off projects worth making real.

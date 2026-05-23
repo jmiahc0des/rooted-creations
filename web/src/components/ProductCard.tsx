@@ -25,7 +25,7 @@ export function ProductCard({ product, index, total }: Props) {
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className={styles.image}
         />
-        <div className={styles.add}>Inquire — ${product.price}</div>
+        <div className={styles.add}>Inquire · ${product.price}</div>
       </div>
       <div className={styles.meta}>
         <span className={styles.name}>{product.name}</span>
