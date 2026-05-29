@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
-import { bigShoulders, instrumentSerif, jetbrains } from './fonts';
+import { bigShoulders, lobster, bowlby, jetbrains } from './fonts';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { asset } from '@/lib/asset';
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${bigShoulders.variable} ${instrumentSerif.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${bigShoulders.variable} ${lobster.variable} ${bowlby.variable} ${jetbrains.variable}`}>
       <body>
         <div className="grain" aria-hidden style={{ backgroundImage: `url(${asset('/grain.svg')})` }} />
         <Nav />
