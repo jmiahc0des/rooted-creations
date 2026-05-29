@@ -5,8 +5,8 @@
   font-family: var(--font-display); font-weight: 900; font-size: 36px;
   line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; margin-bottom: 8px;
 }
-.italic { font-family: var(--font-serif); font-style: italic; font-weight: 400; text-transform: none; color: var(--gold); }
-.tag { font-family: var(--font-serif); font-style: italic; color: var(--cream-dim); font-size: 16px; max-width: 320px; margin-bottom: 24px; }
+.italic { font-family: var(--font-script); font-style: italic; font-weight: 400; text-transform: none; color: var(--gold); }
+.tag { font-family: var(--font-script); font-style: italic; color: var(--cream-dim); font-size: 16px; max-width: 320px; margin-bottom: 24px; }
 .contact { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; line-height: 2; }
 .contact a:hover { color: var(--gold); }
 .col h5 {

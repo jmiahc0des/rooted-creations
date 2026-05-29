@@ -24,7 +24,7 @@ export default function Home() {
       <section className={styles.section}>
         <SectionHead
           idx="01 / The Shop"
-          title={<>Currently <em style={{ fontFamily: 'var(--font-serif)', color: 'var(--gold)' }}>Rooted</em></>}
+          title={<>Currently <em style={{ fontFamily: 'var(--font-script)', color: 'var(--gold)' }}>Rooted</em></>}
           aside="Custom prints, made in small batches. Each piece designed and printed in-house in San Antonio."
           link={{ href: '/shop', label: 'Shop all goods' }}
         />
@@ -38,7 +38,7 @@ export default function Home() {
       <section className={styles.sectionMuted}>
         <SectionHead
           idx="02 / Categories"
-          title={<>Five ways <em style={{ fontFamily: 'var(--font-serif)', color: 'var(--gold)' }}>to wear it</em></>}
+          title={<>Five ways <em style={{ fontFamily: 'var(--font-script)', color: 'var(--gold)' }}>to wear it</em></>}
           aside="A growing catalog of custom designs, available across our core blanks."
         />
         <Categories />
@@ -57,7 +57,7 @@ export default function Home() {
                 </g>
                 <g transform="translate(100 100)">
                   <text textAnchor="middle" fontFamily="var(--font-display)" fontWeight="900" fontSize="30" letterSpacing="2" y="-4" fill="#B8412A">YOURS</text>
-                  <text textAnchor="middle" fontFamily="var(--font-serif)" fontStyle="italic" fontSize="22" y="22" fill="#0C0A07">rooted</text>
+                  <text textAnchor="middle" fontFamily="var(--font-script)" fontStyle="italic" fontSize="22" y="22" fill="#0C0A07">rooted</text>
                 </g>
               </svg>
             </div>

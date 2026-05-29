@@ -4,8 +4,8 @@
 .customTeaser { padding: 96px 32px; background: var(--ink); }
 .customGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
 .customHead { font-family: var(--font-display); font-weight: 900; font-size: clamp(40px, 5.5vw, 72px); line-height: 0.9; text-transform: uppercase; letter-spacing: -0.015em; margin: 24px 0; }
-.customHead em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
-.customLead { font-family: var(--font-serif); font-size: 19px; color: var(--cream-dim); margin-bottom: 28px; max-width: 460px; line-height: 1.45; }
+.customHead em { font-family: var(--font-script); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.customLead { font-family: var(--font-script); font-size: 19px; color: var(--cream-dim); margin-bottom: 28px; max-width: 460px; line-height: 1.45; }
 .customTags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
 .customTag { border: 1px solid var(--hairline-strong); padding: 8px 14px; border-radius: 100px; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cream-dim); }
 .cta { display: inline-flex; align-items: center; gap: 12px; background: var(--gold); color: var(--ink); padding: 16px 24px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; transition: all 0.3s ease; }
@@ -19,8 +19,8 @@
 
 .aboutTeaser { padding: 120px 32px; text-align: center; max-width: 900px; margin: 0 auto; }
 .aboutPull { font-family: var(--font-display); font-weight: 900; font-size: clamp(56px, 9vw, 120px); line-height: 0.85; text-transform: uppercase; letter-spacing: -0.02em; }
-.aboutPull em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
-.aboutBody { margin: 32px auto 0; max-width: 560px; font-family: var(--font-serif); font-size: 19px; color: var(--cream-dim); line-height: 1.55; }
+.aboutPull em { font-family: var(--font-script); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.aboutBody { margin: 32px auto 0; max-width: 560px; font-family: var(--font-script); font-size: 19px; color: var(--cream-dim); line-height: 1.55; }
 .aboutLink { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); padding-bottom: 4px; border-bottom: 1px solid var(--gold); transition: gap 0.3s ease; }
 .aboutLink:hover { gap: 16px; }
 
