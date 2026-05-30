@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const pages = ['/', '/shop', '/shop/rooted-heritage-tee', '/custom', '/about', '/contact'];
+const pages = ['/', '/shop', '/shop/rooted-heritage-tee', '/designs', '/custom', '/about', '/contact'];
 
 for (const path of pages) {
   test(`${path} renders without errors`, async ({ page }) => {
@@ -36,4 +36,39 @@ test('mobile nav toggles', async ({ page }) => {
   const toggle = page.getByRole('button', { name: /toggle menu/i });
   await toggle.click();
   await expect(page.getByRole('link', { name: 'Shop', exact: true }).first()).toBeVisible();
+});
+
+test('home shows pricing teaser and designs teaser', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('heading', { name: 'PRICING', level: 2 })).toBeVisible();
+  await expect(page.getByRole('link', { name: /See full pricing/i })).toHaveAttribute('href', '/shop/#pricing');
+  await expect(page.getByRole('link', { name: /See all 11/i })).toHaveAttribute('href', '/designs/');
+});
+
+test('shop shows full pricing block with 6 items', async ({ page }) => {
+  await page.goto('/shop');
+  const block = page.locator('#pricing');
+  await expect(block).toBeVisible();
+  await expect(block.locator('li')).toHaveCount(6);
+  await expect(block.getByText('$15').first()).toBeVisible();
+  await expect(block.getByText('$30')).toBeVisible();
+});
+
+test('designs page renders 11 cards and Custom Work CTA', async ({ page }) => {
+  await page.goto('/designs');
+  await expect(page.locator('figure').filter({ hasText: /./ })).toHaveCount(11);
+  await expect(page.getByRole('link', { name: /Want one on a tee/i })).toHaveAttribute('href', '/custom/');
+});
+
+test('footer shows payment line', async ({ page }) => {
+  await page.goto('/');
+  const footer = page.locator('footer');
+  await expect(footer.getByText(/We accept/i)).toBeVisible();
+  await expect(footer.getByText('Cash')).toBeVisible();
+  await expect(footer.getByText('Venmo')).toBeVisible();
+});
+
+test('nav has Designs link', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('link', { name: 'Designs', exact: true }).first()).toBeVisible();
 });
