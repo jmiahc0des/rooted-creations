@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
+import { Seal } from './Seal';
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.top}>
         <div className={styles.brand}>
+          <Seal size={56} variant="dark" />
           <div className={styles.mark}>
             Rooted<br />Creations <span className={styles.italic}>Co.</span>
           </div>
