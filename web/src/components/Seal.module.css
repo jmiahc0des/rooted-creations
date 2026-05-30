@@ -1,10 +1,28 @@
 .seal {
-  animation: spin 38s linear infinite;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform-origin: 50% 50%;
 }
-@keyframes spin {
+
+.animated {
+  animation:
+    stamp 1.4s cubic-bezier(.18, .89, .32, 1.28) both,
+    spin-slow 40s linear 1.4s infinite;
+}
+
+@keyframes stamp {
+  0%   { transform: scale(1.6) rotate(-8deg);  opacity: 0; filter: blur(3px); }
+  35%  { transform: scale(1.05) rotate(2deg);  opacity: 1; filter: blur(0); }
+  55%  { transform: scale(0.98) rotate(-1deg); }
+  100% { transform: scale(1)    rotate(0);     opacity: 1; }
+}
+
+@keyframes spin-slow {
   to { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .seal { animation: none; }
+  .animated { animation: none; }
 }
