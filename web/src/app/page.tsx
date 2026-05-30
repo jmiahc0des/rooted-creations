@@ -6,6 +6,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { Categories } from '@/components/Categories';
 import { Process } from '@/components/Process';
 import { NewsletterCTA } from '@/components/NewsletterCTA';
+import { PricingBlock } from '@/components/PricingBlock';
 import { products } from '@/data/products';
 import styles from './page.module.css';
 
@@ -43,6 +44,8 @@ export default function Home() {
         />
         <Categories />
       </section>
+
+      <PricingBlock variant="teaser" />
 
       <section className={styles.customTeaser}>
         <div className={styles.customGrid}>

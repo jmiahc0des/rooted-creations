@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { SectionHead } from '@/components/SectionHead';
 import { CategoryFilter } from '@/components/CategoryFilter';
 import { ShopGrid } from '@/components/ShopGrid';
+import { PricingBlock } from '@/components/PricingBlock';
 import styles from './page.module.css';
 
 export default function Shop() {
@@ -16,6 +17,7 @@ export default function Shop() {
         <CategoryFilter />
         <ShopGrid />
       </Suspense>
+      <PricingBlock variant="full" />
     </main>
   );
 }
