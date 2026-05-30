@@ -7,7 +7,9 @@ import { Categories } from '@/components/Categories';
 import { Process } from '@/components/Process';
 import { NewsletterCTA } from '@/components/NewsletterCTA';
 import { PricingBlock } from '@/components/PricingBlock';
+import { DesignsGrid } from '@/components/DesignsGrid';
 import { products } from '@/data/products';
+import { designs } from '@/data/designs';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -46,6 +48,15 @@ export default function Home() {
       </section>
 
       <PricingBlock variant="teaser" />
+
+      <section className={styles.designsTeaser}>
+        <SectionHead
+          idx="03 / Designs"
+          title={<>From the <em style={{ fontFamily: 'var(--font-script)', color: 'var(--gold)' }}>vault.</em></>}
+          aside="A selection of designs printed for customers, teams, and one-off requests."
+        />
+        <DesignsGrid limit={6} cta={{ href: '/designs', label: `See all ${designs.length} →` }} />
+      </section>
 
       <section className={styles.customTeaser}>
         <div className={styles.customGrid}>

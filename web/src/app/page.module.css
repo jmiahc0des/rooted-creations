@@ -2,6 +2,7 @@
 .sectionMuted { padding: 96px 32px; background: var(--ink-soft); }
 .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 22px; }
 .customTeaser { padding: 96px 32px; background: var(--ink); }
+.designsTeaser { background: var(--ink); }
 .customGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
 .customHead { font-family: var(--font-display); font-weight: 900; font-size: clamp(40px, 5.5vw, 72px); line-height: 0.9; text-transform: uppercase; letter-spacing: -0.015em; margin: 24px 0; }
 .customHead em { font-family: var(--font-script); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
