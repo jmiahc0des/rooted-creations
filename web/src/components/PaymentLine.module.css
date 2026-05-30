@@ -1,0 +1,11 @@
+.line {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  margin: 0;
+}
+.method {
+  color: var(--cream);
+  font-weight: 500;
+}

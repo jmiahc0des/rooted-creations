@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 import { Seal } from './Seal';
+import { PaymentLine } from './PaymentLine';
 
 export function Footer() {
   return (
@@ -55,6 +56,7 @@ export function Footer() {
 
       <div className={styles.bottom}>
         <span className="mono">© 2026 Rooted Creations Co.</span>
+        <PaymentLine />
         <span className="mono">Made in San Antonio, TX · 29.4241°N 98.4936°W</span>
       </div>
     </footer>
