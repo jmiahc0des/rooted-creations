@@ -13,7 +13,7 @@ export function Hero() {
           Vol. <span className={styles.gold}>01</span> · Spring &rsquo;26
         </span>
         <div className={styles.sealWrap}>
-          <Seal size={130} variant="dark" animated label="Rooted Creations Co." />
+          <Seal size={180} variant="white" animated label="Rooted Creations Co." />
         </div>
         <span className={`mono ${styles.eyebrowRight}`}>SA · TX · &rsquo;24</span>
       </div>

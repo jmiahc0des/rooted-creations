@@ -1,7 +1,7 @@
 import { asset } from '@/lib/asset';
 import styles from './Seal.module.css';
 
-export type SealVariant = 'dark' | 'light' | 'blue' | 'coral';
+export type SealVariant = 'dark' | 'light' | 'white' | 'blue' | 'coral';
 
 type Props = {
   /** Pixel size of the rendered seal. Defaults to 130. */
