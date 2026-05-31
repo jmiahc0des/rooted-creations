@@ -21,8 +21,11 @@ Custom apparel and graphic design website for a local San Antonio business.
 
 ## Files
 
-- `index.html` — Single-file homepage demonstrating the full design system (hero, shop grid, categories, custom work pitch, process, story, newsletter CTA, footer).
-- `wireframe.txt` — ASCII wireframe of the homepage layout.
+- `web/` — **The live site.** Next.js V2 app (App Router, static export). Pages, components, data, tests live here. This is the source of truth.
+- `docs/superpowers/` — Specs and implementation plans.
+- `scripts/` — Utility scripts (e.g. `crop-designs.sh` for the design PNG prep).
+- `archive/` — Legacy single-file demo (`index.html`) and original ASCII wireframe (`wireframe.txt`), kept locally for reference; gitignored.
+- `assets/source/` — Source images and SVGs used to generate `web/public/` artifacts (Instagram screenshot originals, multi-variant logo source); gitignored.
 
 ## Design system (as built)
 

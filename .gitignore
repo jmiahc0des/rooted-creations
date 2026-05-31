@@ -5,3 +5,8 @@ web/node_modules/
 web/.next/
 web/test-results/
 web/out/
+
+# Source assets (originals used to generate web/public/ artifacts) — local-only
+assets/
+# Legacy single-file demo + wireframe, kept locally for reference
+archive/

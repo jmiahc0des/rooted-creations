@@ -5,6 +5,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+SRC_DIR="$ROOT/assets/source/designs"
 OUT="$ROOT/web/public/images/designs"
 mkdir -p "$OUT"
 
@@ -49,11 +50,11 @@ count=${#SRCS[@]}
 for ((i=0; i<count; i++)); do
   src="${SRCS[$i]}"
   dst="${DSTS[$i]}"
-  if [[ ! -f "$ROOT/$src" ]]; then
+  if [[ ! -f "$SRC_DIR/$src" ]]; then
     echo "skip: $src not found" >&2
     continue
   fi
-  cp "$ROOT/$src" "$OUT/$dst"
+  cp "$SRC_DIR/$src" "$OUT/$dst"
   sips --cropOffset "$OFFSET_Y" 0 -c "$CROP_H" "$CROP_W" "$OUT/$dst" >/dev/null
   echo "wrote $OUT/$dst"
 done
