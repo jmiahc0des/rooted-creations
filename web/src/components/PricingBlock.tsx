@@ -18,7 +18,7 @@ export function PricingBlock({ variant = 'full' }: Props) {
         <p className={styles.sub}>Quality prints. Great prices.</p>
       </div>
 
-      <ul className={styles.grid}>
+      <ul className={`${styles.grid} ${variant === 'teaser' ? styles.gridTeaser : styles.gridFull}`}>
         {items.map((it) => (
           <li key={it.id} className={styles.item}>
             <span className={styles.label}>{it.label}</span>

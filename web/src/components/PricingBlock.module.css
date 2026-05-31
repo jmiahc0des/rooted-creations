@@ -44,7 +44,8 @@
   .grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (min-width: 1024px) {
-  .grid { grid-template-columns: repeat(6, 1fr); }
+  .gridFull   { grid-template-columns: repeat(6, 1fr); }
+  .gridTeaser { grid-template-columns: repeat(4, 1fr); max-width: 880px; }
 }
 @media (max-width: 380px) {
   .grid { grid-template-columns: 1fr; }
