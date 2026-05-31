@@ -13,7 +13,8 @@
 
   /* ───── TYPE ───── */
   --font-display: var(--font-big-shoulders), 'Arial Black', sans-serif;
-  --font-serif: var(--font-instrument), Georgia, serif;
+  --font-script: var(--font-lobster), 'Brush Script MT', cursive;
+  --font-chunky: var(--font-bowlby), 'Impact', sans-serif;
   --font-mono: var(--font-jetbrains), 'Courier New', monospace;
 
   /* ───── SPACING (8pt grid) ───── */

@@ -1,28 +1,31 @@
+import { asset } from '@/lib/asset';
 import styles from './Seal.module.css';
 
+export type SealVariant = 'dark' | 'light' | 'blue' | 'coral';
+
 type Props = {
+  /** Pixel size of the rendered seal. Defaults to 130. */
   size?: number;
-  text?: string;
+  /** Which color variant to render. Defaults to 'dark' (outline-on-bone). */
+  variant?: SealVariant;
+  /** When true, applies the stamp-then-rotate animation. */
+  animated?: boolean;
+  /** Optional accessible label. If omitted, the seal is treated as decorative. */
+  label?: string;
 };
 
-export function Seal({ size = 130, text = 'ROOTED CREATIONS CO. · SAN ANTONIO TX · EST. 2024 · ' }: Props) {
+export function Seal({ size = 130, variant = 'dark', animated = false, label }: Props) {
+  const cls = [styles.seal, animated ? styles.animated : ''].filter(Boolean).join(' ');
+  const src = asset(`/logos/rooted-${variant}.svg`);
+  const ariaProps = label
+    ? { role: 'img' as const, 'aria-label': label }
+    : { 'aria-hidden': true as const };
+
   return (
-    <svg className={styles.seal} viewBox="0 0 200 200" width={size} height={size} aria-hidden="true">
-      <defs>
-        <path id="seal-circle" d="M 100, 100 m -78, 0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
-      </defs>
-      <circle cx="100" cy="100" r="92" fill="none" stroke="var(--gold)" strokeWidth="1.2" />
-      <circle cx="100" cy="100" r="62" fill="none" stroke="var(--gold)" strokeWidth="1.2" />
-      <text fontFamily="var(--font-mono)" fontSize="11" letterSpacing="4" fill="var(--gold)">
-        <textPath href="#seal-circle" startOffset="0">{text}</textPath>
-      </text>
-      <g transform="translate(100 100)" stroke="var(--gold)" strokeWidth="1.5" fill="none" strokeLinecap="round">
-        <line x1="0" y1="-32" x2="0" y2="32" />
-        <line x1="-22" y1="-22" x2="22" y2="22" />
-        <line x1="22" y1="-22" x2="-22" y2="22" />
-        <line x1="-32" y1="0" x2="32" y2="0" />
-        <circle cx="0" cy="0" r="6" fill="var(--brick)" stroke="none" />
-      </g>
-    </svg>
+    <span
+      className={cls}
+      style={{ width: size, height: size, backgroundImage: `url(${src})` }}
+      {...ariaProps}
+    />
   );
 }

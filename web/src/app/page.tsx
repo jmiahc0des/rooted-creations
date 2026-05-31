@@ -6,7 +6,10 @@ import { ProductCard } from '@/components/ProductCard';
 import { Categories } from '@/components/Categories';
 import { Process } from '@/components/Process';
 import { NewsletterCTA } from '@/components/NewsletterCTA';
+import { PricingBlock } from '@/components/PricingBlock';
+import { DesignsGrid } from '@/components/DesignsGrid';
 import { products } from '@/data/products';
+import { designs } from '@/data/designs';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -24,7 +27,7 @@ export default function Home() {
       <section className={styles.section}>
         <SectionHead
           idx="01 / The Shop"
-          title={<>Currently <em style={{ fontFamily: 'var(--font-serif)', color: 'var(--gold)' }}>Rooted</em></>}
+          title={<>Currently <em style={{ fontFamily: 'var(--font-script)', color: 'var(--gold)' }}>Rooted</em></>}
           aside="Custom prints, made in small batches. Each piece designed and printed in-house in San Antonio."
           link={{ href: '/shop', label: 'Shop all goods' }}
         />
@@ -38,10 +41,21 @@ export default function Home() {
       <section className={styles.sectionMuted}>
         <SectionHead
           idx="02 / Categories"
-          title={<>Five ways <em style={{ fontFamily: 'var(--font-serif)', color: 'var(--gold)' }}>to wear it</em></>}
+          title={<>Five ways <em style={{ fontFamily: 'var(--font-script)', color: 'var(--gold)' }}>to wear it</em></>}
           aside="A growing catalog of custom designs, available across our core blanks."
         />
         <Categories />
+      </section>
+
+      <PricingBlock variant="teaser" />
+
+      <section className={styles.designsTeaser}>
+        <SectionHead
+          idx="03 / Designs"
+          title={<>From the <em style={{ fontFamily: 'var(--font-script)', color: 'var(--gold)' }}>vault.</em></>}
+          aside="A selection of designs printed for customers, teams, and one-off requests."
+        />
+        <DesignsGrid limit={6} cta={{ href: '/designs', label: `See all ${designs.length} →` }} />
       </section>
 
       <section className={styles.customTeaser}>
@@ -57,7 +71,7 @@ export default function Home() {
                 </g>
                 <g transform="translate(100 100)">
                   <text textAnchor="middle" fontFamily="var(--font-display)" fontWeight="900" fontSize="30" letterSpacing="2" y="-4" fill="#B8412A">YOURS</text>
-                  <text textAnchor="middle" fontFamily="var(--font-serif)" fontStyle="italic" fontSize="22" y="22" fill="#0C0A07">rooted</text>
+                  <text textAnchor="middle" fontFamily="var(--font-script)" fontStyle="italic" fontSize="22" y="22" fill="#0C0A07">rooted</text>
                 </g>
               </svg>
             </div>
@@ -65,7 +79,7 @@ export default function Home() {
             <div className={styles.stamp}>Free<br />Quote<br />★</div>
           </div>
           <div>
-            <span className={`mono`} style={{ color: 'var(--gold)' }}>03 / Custom Work</span>
+            <span className={`mono`} style={{ color: 'var(--gold)' }}>04 / Custom Work</span>
             <h3 className={styles.customHead}>Bring us <em>your idea.</em></h3>
             <p className={styles.customLead}>
               We design and print custom apparel for small businesses, churches, schools, family reunions, birthdays, weddings, and one-off projects worth making real.

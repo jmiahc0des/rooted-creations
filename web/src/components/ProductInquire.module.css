@@ -23,4 +23,4 @@
   margin-top: 8px;
 }
 .btn:hover { background: var(--cream); gap: 18px; }
-.note { font-family: var(--font-serif); font-style: italic; color: var(--cream-dim); font-size: 14px; }
+.note { font-family: var(--font-script); font-style: italic; color: var(--cream-dim); font-size: 14px; }

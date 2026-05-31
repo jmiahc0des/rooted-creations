@@ -58,7 +58,18 @@
 }
 .link:hover::after { width: 100%; }
 
-.brand { text-align: center; line-height: 1; }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  line-height: 1;
+}
+.brandText {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
 .brandName {
   font-family: var(--font-display);
   font-weight: 900;

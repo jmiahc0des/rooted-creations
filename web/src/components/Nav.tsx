@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Marquee } from './Marquee';
+import { Seal } from './Seal';
 import styles from './Nav.module.css';
 
 export function Nav() {
@@ -24,13 +25,17 @@ export function Nav() {
       <nav className={styles.nav}>
         <div className={`${styles.navLeft} ${open ? styles.navMobileOpen : ''}`}>
           <Link href="/shop" className={styles.link} onClick={() => setOpen(false)}>Shop</Link>
+          <Link href="/designs" className={styles.link} onClick={() => setOpen(false)}>Designs</Link>
           <Link href="/custom" className={styles.link} onClick={() => setOpen(false)}>Custom Work</Link>
           <Link href="/about" className={styles.link} onClick={() => setOpen(false)}>Story</Link>
         </div>
 
-        <Link href="/" className={styles.brand}>
-          <span className={styles.brandName}>Rooted Creations Co.</span>
-          <span className={styles.brandSub}>SA · TX · MADE WITH PURPOSE</span>
+        <Link href="/" className={styles.brand} aria-label="Rooted Creations Co., home">
+          <Seal size={36} variant="dark" />
+          <span className={styles.brandText}>
+            <span className={styles.brandName}>Rooted Creations Co.</span>
+            <span className={styles.brandSub}>SA · TX · MADE WITH PURPOSE</span>
+          </span>
         </Link>
 
         <div className={styles.navRight}>

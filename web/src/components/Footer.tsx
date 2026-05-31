@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
+import { Seal } from './Seal';
+import { PaymentLine } from './PaymentLine';
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.top}>
         <div className={styles.brand}>
+          <Seal size={56} variant="dark" />
           <div className={styles.mark}>
             Rooted<br />Creations <span className={styles.italic}>Co.</span>
           </div>
@@ -53,6 +56,7 @@ export function Footer() {
 
       <div className={styles.bottom}>
         <span className="mono">© 2026 Rooted Creations Co.</span>
+        <PaymentLine />
         <span className="mono">Made in San Antonio, TX · 29.4241°N 98.4936°W</span>
       </div>
     </footer>

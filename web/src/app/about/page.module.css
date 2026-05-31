@@ -10,8 +10,8 @@
 
 .body { }
 .pull { font-family: var(--font-display); font-weight: 900; font-size: clamp(56px, 9vw, 124px); line-height: 0.85; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 40px; }
-.pull em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
-.paragraph { font-family: var(--font-serif); font-size: 21px; line-height: 1.55; color: var(--cream); margin-bottom: 24px; max-width: 660px; }
+.pull em { font-family: var(--font-script); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.paragraph { font-family: var(--font-script); font-size: 21px; line-height: 1.55; color: var(--cream); margin-bottom: 24px; max-width: 660px; }
 .paragraph.muted { color: var(--cream-dim); }
 .paragraph:first-of-type::first-letter {
   font-family: var(--font-display); font-weight: 900; font-size: 80px; line-height: 0.8;

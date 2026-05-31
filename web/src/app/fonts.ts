@@ -1,4 +1,4 @@
-import { Big_Shoulders, Instrument_Serif, JetBrains_Mono } from 'next/font/google';
+import { Big_Shoulders, Lobster, Bowlby_One, JetBrains_Mono } from 'next/font/google';
 
 export const bigShoulders = Big_Shoulders({
   subsets: ['latin'],
@@ -7,12 +7,18 @@ export const bigShoulders = Big_Shoulders({
   variable: '--font-big-shoulders',
 });
 
-export const instrumentSerif = Instrument_Serif({
+export const lobster = Lobster({
   subsets: ['latin'],
   weight: '400',
-  style: ['normal', 'italic'],
   display: 'swap',
-  variable: '--font-instrument',
+  variable: '--font-lobster',
+});
+
+export const bowlby = Bowlby_One({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-bowlby',
 });
 
 export const jetbrains = JetBrains_Mono({

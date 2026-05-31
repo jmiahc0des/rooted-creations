@@ -1,0 +1,6 @@
+.page {
+  background: var(--ink);
+  color: var(--cream);
+  min-height: 100vh;
+  padding-bottom: var(--space-9);
+}

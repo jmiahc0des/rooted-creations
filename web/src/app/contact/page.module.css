@@ -2,7 +2,7 @@
 .head { text-align: center; margin-bottom: 64px; }
 .eyebrow { color: var(--gold); margin-bottom: 16px; display: inline-block; }
 .title { font-family: var(--font-display); font-weight: 900; font-size: clamp(56px, 9vw, 120px); line-height: 0.85; text-transform: uppercase; letter-spacing: -0.02em; }
-.title em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
+.title em { font-family: var(--font-script); font-style: italic; font-weight: 400; color: var(--gold); text-transform: none; }
 
 .grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; align-items: start; padding-top: 32px; border-top: 1px solid var(--hairline); }
 
@@ -11,7 +11,7 @@
 .blockLabel { color: var(--gold-soft); }
 .blockValue { font-family: var(--font-display); font-weight: 900; font-size: 24px; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.1; }
 .blockValue a:hover { color: var(--gold); }
-.blockSub { font-family: var(--font-serif); font-style: italic; color: var(--cream-dim); font-size: 16px; }
+.blockSub { font-family: var(--font-script); font-style: italic; color: var(--cream-dim); font-size: 16px; }
 
 @media (max-width: 1024px) {
   .grid { grid-template-columns: 1fr; gap: 48px; }

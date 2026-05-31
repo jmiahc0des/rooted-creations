@@ -12,7 +12,9 @@ export function Hero() {
         <span className={`mono ${styles.eyebrowLeft}`}>
           Vol. <span className={styles.gold}>01</span> · Spring &rsquo;26
         </span>
-        <div className={styles.sealWrap}><Seal size={130} /></div>
+        <div className={styles.sealWrap}>
+          <Seal size={130} variant="dark" animated label="Rooted Creations Co." />
+        </div>
         <span className={`mono ${styles.eyebrowRight}`}>SA · TX · &rsquo;24</span>
       </div>
 
